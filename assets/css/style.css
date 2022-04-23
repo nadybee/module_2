@@ -57,15 +57,14 @@ a:hover {
   font-size: 19px;
 }
 
-main {
-  display: flex;
-}
+
+ 
 
 .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 100px;
+  margin-top: 71px;
   width: 100%;
   align-items: center;
 }
@@ -75,14 +74,14 @@ main {
   align-items: center;
   background-color: var(--primary);
   color: white;
-
+  width: 100%;
   border: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .bio img {
-  max-height: 350px;
-  border-radius: 10px 0 0 10px;
+  max-height: 300px;
+  /* border-radius: 10px 0 0 10px; */
 }
 
 #about {
@@ -100,23 +99,41 @@ main {
 
 .work {
   display: flex;
-  margin-top: 40px;
+  margin-top: 32px;
   width: 100%;
-  justify-content: space-between;
+
 }
 
 .card-1 {
-  /* max-width: 50%; */
-  margin-right: 24px;
+
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border-radius: 18px;
+
+}
+
+.card-1 h3 {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  text-decoration: none;
+
+  opacity: .8;
+  color: var(--primary);
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .card-1 img {
 
-  border-radius: 10px;
+  border-radius: 16px;
+
 }
 
 .card-1 img:hover {
   box-shadow: 6px 6px 8px grey;
+
 }
 
 .card-2 img:hover {
@@ -149,7 +166,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: center; 
+  margin-bottom: 100px;
 }
 
 .contact i {
@@ -178,9 +196,12 @@ main {
 footer {
   display: flex;
   flex-direction: column;
+  padding-left: 34px;
   width: 100%;
   height: 50px;
   background-color: white;
+  position:absolute;
+  bottom: 0px;
 
 }
 
@@ -192,7 +213,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 0 26px 0;
- 
+
   }
 
   .navbar h1 {
@@ -203,6 +224,7 @@ footer {
   .navbar ul {
     margin-bottom: 16px;
   }
+
   .navbar a {
     padding: 12px;
     margin-bottom: 16px;
@@ -215,15 +237,14 @@ footer {
   }
 
   .container {
-    margin: 120px 16px;
+    margin: 100px;
     flex-direction: column;
   }
 
   .bio {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    max-height: 100%;
+    width: 90%;
   }
 
   #about {
@@ -241,7 +262,7 @@ footer {
   .bio img {
     /* max-height: 350px; */
     width: 100%;
-    border-radius: 8px 8px 0 0;
+    /* border-radius: 8px 8px 0 0; */
   }
 
   .work {
