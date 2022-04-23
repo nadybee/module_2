@@ -1,101 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/4f1341bf20.js" crossorigin="anonymous"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/uwq4yfd.css" />
 
-<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Natalie Fairbourne's Porfolio</title>
-</head>
-<body>
-    <header>
-        <h1>Natalie Fairbourne</h1>
+  </head>
+  <body>
+    <header></header>
+      <div class="navbar">
+        <h1>NATALIE FAIRBOURNE</h1>
         <ul>
-      <li>
-          <a href="#">my work</a>
-      </li>
-      <li>
-        <a href="#">skills</a>
-    </li>
-    <li>
-        <a href="#">contact</a>
-    </li>
-</ul>
-
-  
-       
-          
-       
+            <li>
+                <a href="#about">about</a>
+              </li>
+          <li>
+            <a href="#work">my work</a>
+          </li>
+         
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <main>
-        <section>
-            <div>
-                <img src="./assets/images/natalie_profile.png" alt="female profile picture">
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse blanditiis excepturi, recusandae laudantium id magnam assumenda aliquam dolore doloribus, culpa molestiae minima beatae rem sequi officiis nisi amet repudiandae illo.</p>
-        </section>
-    </main>
-    <section>
-        <h2>Skills</h2>
-        <div>
-            <h3>Product Management</h3>
-        </div>
-        <div>
-            <h3>Figma/Illustrator</h3>
-        </div>
-        <div>
-            <h3>UX/UI</h3>
-        </div>
-        <div>
-            <h3>HTML/CSS</h3>
-        </div>
-        <div>
-            <h3>JavaScript</h3>
-        </div>
-        <div>
-            <h3>React</h3>
-        </div>
-    </section>
-    <section>
-        <h2>My Work</h2>
-        <div>
-            <a href="https://www.yoodlize.com/"> 
-                <h4>Designed and launched Yoodlize</h4>
-            </a>
-            <img src="./assets/images/yoodlize blue logo.png" alt="yoodlize logo">
-            <img src="./assets/images/Group 79.png" alt="phone showing yoodlize app">
 
-        </div>
+    <main >
+        <div class="container"> 
+      <section class="bio">
+        <img
+          src="./assets/images/natalie_profile.png"
+          alt="female profile picture"
+        />
+ <div id="about">
+        <p>
+         My name is Nataie, and I am a full stack web developer in training. 
+         I am the co-founder, designer and product manager for Yoodlize, 
+         a new marketplace rental app started in Utah. <p>
+         <p>
+         My motivation to learn to code is to be more hands on in continued development of Yoodlize. 
+         In my self teaching, I was able to build a Black Jack game using Javascript. 
+        My goal is to transition from the food industry to software developement full time.
+        </p>
+      </div>
+      </section>
 
-        <div>
-            <a href="https://nadybee.github.io/Blackjack/">
-                <h4>BLack Jack game in JavaScript</h4>
+       
+    <section id="work">
+       
+        <div class="work"> 
+        <div class="card-1">
+            <a href="https://www.yoodlize.com/" target="_blank">
+                <img
+                  src="./assets/images/Group 80.png"
+                  alt="yoodlize logo"
+                />
+                <h3>Designed the Yoodlize app</h3>
             </a>
-            <img src="./assets/images/blackjack.png" alt="green with playing cards for blackjack">
+        
+      
         </div>
-        <div>
-            <a href="https://github.com/nadybee/module_1"> 
-                <h4>My First Bootcamp assignment</h4>
-            
-            </a>
-            <img src="./assets/images/uofu.jpeg" alt="u of u bootcamp logo with computer">
+        <div class="card-row"> 
+        <div class="card-2">
+          <a href="https://nadybee.github.io/Blackjack/">
+            <img
+            src="./assets/images/blackjack.png"
+            alt="green with playing cards for blackjack"
+          />
+          </a>
+       
         </div>
-    </section>
-    <section>
+        <div class="card-2">
+          <a href="https://github.com/nadybee/module_1">
+            <img
+            src="./assets/images/uofu.jpeg"
+            alt="u of u bootcamp logo with computer"
+          />
+          </a>
+        
+        </div>
+    </div>
+    </div>
+      </section>
+      <section id="contact" class="contact">
+          <div class="contact-title">
         <h2>Contact info</h2>
+      
+    </div>
         <h4>natalie@yoodlize.com</h4>
         <h4>801-708-1016</h4>
-      <a href="https://www.linkedin.com/in/natalie-fairbourne-51986685/">
-          <img src="./assets/images/linkedin-brands.svg" alt="linkedin icon">
-      </a>
-      <a href="https://github.com/nadybee">
-          <img src="./assets/images/github-brands.svg" alt="github icon">
-      </a>
-      <a href="https://linktr.ee/Yoodlize_social">
-          <img src="./assets/images/newspaper-solid.svg" alt="newspaper icon">
-      </a>
-    </section>
-</body>
+        <div class="contact-icons"> 
+        <a href="https://www.linkedin.com/in/natalie-fairbourne-51986685/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/nadybee">
+      
+          <i class="fa-brands fa-github"></i>
+        </a> 
+        <a href="https://linktr.ee/Yoodlize_social">
+          <i class="fa-solid fa-newspaper"></i>
+        </a>
+  </div>
+      </section>
+    </div>
+    </main> 
+    <footer>
+      <h4>Thank you for looking at my Portfolio ♥️</h4>
+      <p> copyright @2022</p>
+    </footer>
+  </body>
 </html>
