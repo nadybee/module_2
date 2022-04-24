@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/4f1341bf20.js" crossorigin="anonymous"></script>
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -21,23 +22,14 @@
       type="image/png"
       sizes="16x16"
       href="./favicon_io/favicon-16x16.png"
-    />
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/uwq4yfd.css" />
-
+    /> 
+  
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Natalie Fairbourne's Porfolio</title>
   </head>
   <body>
-    <header></header>
-      <div class="navbar">
+    <header class="navbar">
+     
         <h1>NATALIE FAIRBOURNE</h1>
         <ul>
             <li>
@@ -51,45 +43,52 @@
             <a href="#contact">contact</a>
           </li>
         </ul>
-      </div>
+  
     </header>
 
     <main class="container" >
     
-      <section class="bio">
+      <section class="bio" id="about">
         <img
           src="./assets/images/natalie_profile.png"
           alt="female profile picture"
         />
- <div id="about">
+ <div >
         <p>
          My name is Nataie, and I am a full stack web developer in training. 
-         I am the co-founder, designer and product manager for Yoodlize, 
-         a new marketplace rental app started in Utah. <p>
+         I am the co-founder and CPO of for Yoodlize, 
+         a new marketplace rental app started in Utah. I also designed the majority of the app.<p>
          <p>
          My motivation to learn to code is to be more hands on in continued development of Yoodlize. 
-         In my self teaching, I was able to build a Black Jack game using Javascript. 
-        My goal is to transition from the food industry to software developement full time.
+         In my self teaching, I was able to build a Blackjack game using Javascript. 
+        Currently,I have a food services business called Bee's Kitchen. My goal is to transition from the food industry to software developement full time.
         </p>
       </div>
       </section>
 
        
-    <section id="work">
+    <section id="work" class="work">
        
-        <div class="work"> 
+
         <div class="card-1">
             <a href="https://www.yoodlize.com/" target="_blank">
                 <img
                   src="./assets/images/Group 81.png"
-                  alt="yoodlize logo"
+                  alt="yoodlize logo" id="phone"
                 />
-                <h3>Designed the Yoodlize app</h3>
+              <div class="info-card">
+                <img src="./assets/images/yoodlize blue logo.png" alt="yoodlize logo" id="yoodlize-logo">
+                <ul> 
+               <li>CPO and Co-Founder</li> 
+                <li> UX/UI designer of the app</li> 
+                <li>Live in the app store with over 15,000 users</li>
+              </ul>
+              </div>
             </a>
         
       
         </div>
-        <div class="card-row"> 
+        <div class="card-column"> 
         <div class="card-2">
           <a href="https://nadybee.github.io/Blackjack/">
             <img
@@ -99,6 +98,7 @@
           </a>
        
         </div>
+        
         <div class="card-2">
           <a href="https://github.com/nadybee/module_1">
             <img
@@ -106,16 +106,34 @@
             alt="u of u bootcamp logo with computer"
           />
           </a>
-        
+          </div>
         </div>
+   
+      <div class="card-row"> 
+          <div class="card-3">
+            <h3> projects coming soon! </h3>
+            <i class="fas fa-rocket-launch"></i>
+          </div>
+          <div class="card-3">
+            <h3> projects coming soon! </h3>
+            <i class="fas fa-rocket-launch"></i>
+          </div>
+          <div class="card-3">
+            <h3> projects coming soon! </h3>
+            <i class="fas fa-rocket-launch"></i>
+            
+          </div>
+        </div> 
+        </div>
+
     </div>
-    </div>
+ 
       </section>
       <section id="contact" class="contact">
-          <div class="contact-title">
-        <h2>Contact info</h2>
+        <hr>
+        <h2>Contact info:</h2>
       
-    </div>
+
         <h4>natalie@yoodlize.com</h4>
         <h4>801-708-1016</h4>
         <div class="contact-icons"> 
@@ -130,6 +148,7 @@
           <i class="fa-solid fa-newspaper"></i>
         </a>
   </div>
+  <hr>
       </section>
    
     </main> 

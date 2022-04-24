@@ -1,7 +1,7 @@
 :root {
   --text-color: #343a40;
   --primary: #0ea5e9;
-  --secondary: #cef3ff;
+  --secondary: #0369A1;
   --tertiary: #e8253f;
   --silver: #cfd4da;
   --background: #f3f4f6;
@@ -11,7 +11,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body {
@@ -21,7 +20,14 @@ body {
   line-height: 1.6;
   position: relative;
 }
+hr {
+border: solid 2px var(--silver);
+margin: 16px 0;
 
+}
+header {
+
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -29,26 +35,29 @@ body {
   background-color: white;
   box-shadow: 0px 0px 5px grey;
   width: 100%;
-  height: 70px;
+  height: 90px;
   position: fixed;
   top: 0px;
   padding: 0 100px;
+  z-index: 1;
 }
 
 .navbar h1 {
+
   color: var(--primary);
 }
 
-ul {
+.navbar ul {
   display: flex;
   list-style: none;
+
 }
 
 .navbar a {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--text-color);
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 26px;
   margin: 0 5px;
 }
 
@@ -57,16 +66,13 @@ a:hover {
   font-size: 19px;
 }
 
-
- 
-
 .container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  margin-top: 71px;
+  margin-top: 7%;
   width: 100%;
   align-items: center;
+  align-content: center;
 }
 
 .bio {
@@ -94,79 +100,121 @@ a:hover {
   padding-bottom: 8px;
   line-height: 1.4;
   font-size: 18px;
-  text-indent: 16px;
+  text-indent: 24px;
 }
 
 .work {
   display: flex;
   margin-top: 32px;
+  flex-wrap: wrap;
   width: 100%;
-
+  border: #343a40;
 }
 
 .card-1 {
-
   position: relative;
-  width: 100%;
+  width: 46%;
+  height: 375px;
   background-color: white;
-  border-radius: 18px;
-
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 10px;
 }
 
-.card-1 h3 {
+#phone {
+  position: absolute;
+  left: -25px
+}
+
+.info-card {
   position: absolute;
   top: 60px;
-  right: 40px;
+
   text-decoration: none;
-
-  opacity: .8;
-  color: var(--primary);
-  padding: 8px;
+  width: 50%;
+  opacity: 0.8;
+  color: var(--text-color);
+  padding-left: 10px;
   border-radius: 4px;
+  font-size: 20px;
 }
 
-.card-1 img {
-
-  border-radius: 16px;
-
-}
-
-.card-1 img:hover {
-  box-shadow: 6px 6px 8px grey;
+#yoodlize-logo {
+  width: 12rem;
+  margin-left: 24px;
+  margin-bottom: 16px;
+  margin-top: 16px;
 
 }
 
-.card-2 img:hover {
-  box-shadow: 6px 6px 8px grey;
+.info-card li {
+  margin-bottom: 16px;
+}
 
+.card-1:hover {
+  box-shadow: 5px 5px 5px var(--silver);
+}
+
+
+.card-2:hover {
+  box-shadow: 5px 5px 5px var(--silver);
 }
 
 .card-2 {
-  max-height: 163px;
+  max-height: 175px;
   width: 100%;
   margin-bottom: 24px;
+ 
 }
 
 .card-2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 10px;
-  object-position: top;
 }
 
-.card-row {
-  max-width: 500;
+.card-column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 46%;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 30%;
+  height: 200px;
+  background-color: white;
+  margin: 3%;
+  color: #868e96;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-3 i {
+  font-size: 50px;
+  padding-top: 16px;
+  
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center; 
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
   margin-bottom: 100px;
 }
 
@@ -183,11 +231,7 @@ a:hover {
   text-decoration: none;
 }
 
-.contact-title {
-  display: flex;
-  align-items: center;
-  padding: 16px 0 0 16px;
-}
+.contact-title {}
 
 .contact-title h2 {
   padding: 12px;
@@ -200,9 +244,8 @@ footer {
   width: 100%;
   height: 50px;
   background-color: white;
-  position:absolute;
-  bottom: 0px;
-
+  /* position: absolute;
+  bottom: 0px;*/
 }
 
 /* --------------------------------------------------------- */
@@ -213,10 +256,10 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 0 26px 0;
-
   }
 
   .navbar h1 {
+    font-size: 26px;
     padding: 8px;
     margin: 0;
   }
@@ -226,25 +269,24 @@ footer {
   }
 
   .navbar a {
+    font-size: 18px;
     padding: 12px;
     margin-bottom: 16px;
   }
 
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .container {
-    margin: 100px;
+    margin-top: 80px;
     flex-direction: column;
+
   }
 
   .bio {
     display: flex;
     flex-direction: column;
     width: 90%;
+    border-radius: 4px;
+
   }
 
   #about {
@@ -254,36 +296,80 @@ footer {
   }
 
   .bio p {
-
     padding-bottom: 6px;
     font-size: 16px;
   }
 
   .bio img {
-    /* max-height: 350px; */
     width: 100%;
-    /* border-radius: 8px 8px 0 0; */
+    margin-bottom: 18px;
+    object-fit: cover;
+
   }
 
   .work {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .card-row {
+  /* .card-row {
     flex-direction: row;
-  }
+    align-items: center;
+    justify-content: center;
+
+  } */
 
   .card-1 {
-    max-width: 100%;
-  }
-
-  .card-2 {
-
+    width: 90%;
+    height: 300px;
+    font-size: 16px;
+    border-radius: 4px;
     margin-bottom: 24px;
   }
 
+
+  #phone {
+
+    left: -60px;
+    top: -30px;
+  }
+
+  .info-card {
+    top: 20px;
+    left: 150px;
+    font-size: 14px;
+  }
+
+
+
+  #yoodlize-logo {
+    width: 150px;
+    margin-left: 0;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+  }
+.card-column{
+  flex-direction: row;
+  width: 90%
+}
+  .card-2 {
+    margin-bottom: 24px;
+
+  }
+
   .card-2 img {
-    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card-3 {
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .card-3 i {
+    font-size: 28px;
 
   }
 
