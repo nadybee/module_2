@@ -27,7 +27,7 @@ hr {
 
 }
 
-header {}
+
 
 .navbar {
   display: flex;
@@ -64,7 +64,7 @@ header {}
 
 a:hover {
   color: var(--tertiary);
-  font-size: 19px;
+
 }
 
 .container {
