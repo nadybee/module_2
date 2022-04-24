@@ -20,14 +20,15 @@ body {
   line-height: 1.6;
   position: relative;
 }
+
 hr {
-border: solid 2px var(--silver);
-margin: 16px 0;
+  border: solid 2px var(--silver);
+  margin: 16px 0;
 
 }
-header {
 
-}
+header {}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -123,13 +124,13 @@ a:hover {
 
 #phone {
   position: absolute;
-  left: -25px
+  left: -25px;
 }
 
 .info-card {
   position: absolute;
   top: 60px;
-
+  left: 220px;
   text-decoration: none;
   width: 50%;
   opacity: 0.8;
@@ -158,13 +159,19 @@ a:hover {
 
 .card-2:hover {
   box-shadow: 5px 5px 5px var(--silver);
+  /* color: var(--tertiary); */
+}
+.card-2 h4:hover{
+  box-shadow: 0;
+  color: var(--tertiary);
 }
 
 .card-2 {
+  position:relative;
   max-height: 175px;
   width: 100%;
   margin-bottom: 24px;
- 
+
 }
 
 .card-2 img {
@@ -173,7 +180,18 @@ a:hover {
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
+  opacity: 1;
 }
+.card-2 h4 {
+  position: absolute;
+  bottom: 24px;
+  right: 0px;
+  background-color: rgba(207, 212, 218, 0.8);
+  color: var(--text-color);
+  padding: 5px 56px ;
+  border-radius: 4px 0 0 4px;
+}
+
 
 .card-column {
   display: flex;
@@ -205,7 +223,7 @@ a:hover {
 .card-3 i {
   font-size: 50px;
   padding-top: 16px;
-  
+
 }
 
 .contact {
@@ -276,7 +294,7 @@ footer {
 
 
   .container {
-    margin-top: 80px;
+    margin-top: 82px;
     flex-direction: column;
 
   }
@@ -304,6 +322,7 @@ footer {
     width: 100%;
     margin-bottom: 18px;
     object-fit: cover;
+    object-position: top;
 
   }
 
@@ -350,10 +369,12 @@ footer {
     margin-top: 16px;
 
   }
-.card-column{
-  flex-direction: row;
-  width: 90%
-}
+
+  .card-column {
+    flex-direction: row;
+    width: 90%
+  }
+
   .card-2 {
     margin-bottom: 24px;
 
@@ -363,11 +384,17 @@ footer {
     border-radius: 4px;
   }
 
+  .card-2 h4{
+    font-size: 14px;
+    padding: 5px 32px;
+  }
+
   .card-3 {
     border-radius: 4px;
     font-size: 14px;
     text-align: center;
   }
+
   .card-3 i {
     font-size: 28px;
 
