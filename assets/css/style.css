@@ -79,11 +79,14 @@ a:hover {
   width: 100%;
   align-items: center;
   align-content: center;
-  position: relative;
-  top: 90px;
+  /* margin-top: 90px; */
+  /* position: relative;
+  top: 90px; */
 }
 /* about section */
 .bio {
+  /* position: relative;
+  top:90px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -92,23 +95,27 @@ a:hover {
   color: white;
   width: 100%;
   border: none;
+  padding-top: 90px;
+  
 }
 
 .bio img {
-  max-width: 350px;
+  height: 350px;
+  width: 350px;
+  object-fit: contain;
   flex: 30%;
 }
 
 .bio-text {
   display: flex;
-  flex: 70%;
+  /* flex: 70%; */
   width: 100%;
   flex-direction: column;
   background-color: var(--primary);
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 350px;
+  min-height: 350px;
   padding: 18px;
   font-size: 18px;
 }
@@ -119,7 +126,14 @@ a:hover {
   margin-bottom: 9px;
 }
 /* work showcase */
+ #work{
+ display: block;
+ position:relative;
+ top: -90px;
+ visibility: hidden;
+} 
 .work {
+
   display: flex;
   flex-wrap: wrap;
   margin-top: 3%;
@@ -341,7 +355,7 @@ footer {
   body {
     margin-left: 10%;
     margin-right: 10%;
-    background-color: var(--secondary);
+    background-color: var(--text-color);
 
   }
 
@@ -430,6 +444,7 @@ footer {
 
   .bio-image {
     height: 200px;
+    width: auto;
   }
 
   .card-1 {
