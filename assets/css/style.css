@@ -289,11 +289,20 @@ a:hover {
   width: 100%;
 }
 
-#card-2 {
+#first-project {
   background-size: cover;
   box-shadow: 5px 5px 5px var(--silver);
   background-image: url('/assets/images/AdobeStock_247177577.jpeg');
 
+
+}
+
+#project-4{
+  background-size: cover;
+background-position: center;
+ background-color: var(--background);
+  box-shadow: 5px 5px 5px var(--silver);
+  background-image: url('/assets/images/quiz.png');
 
 }
 
@@ -306,6 +315,10 @@ a:hover {
 
 } */
 .card-3-title {
+  position: absolute;
+  right: 1%;
+  top: 70%;
+  font-size: 18px;
   color: var(--background);
   background-color: rgba(52, 48, 64, .7);
   padding: 8px;
@@ -314,10 +327,12 @@ a:hover {
 }
 
 .card-3 {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  width: 30%;
+  min-width: 30%;
+  min-height: 200px;
   padding: 16px;
   background-color: white;
   color: #868e96;
@@ -331,12 +346,14 @@ a:hover {
 .card-3 i {
   font-size: 50px;
   padding-top: 16px;
+  text-decoration: none;
 
 }
 
 .card-3 a {
   text-decoration: none;
 }
+
 
 /* contact info */
 .contact {
