@@ -297,6 +297,21 @@ a:hover {
 
 }
 
+#password-generator {
+  background-size: cover;
+  background-position: right top;
+  box-shadow: 5px 5px 5px var(--silver);
+  background-image: url('/assets/images/AdobeStock_321114882.jpeg');
+
+
+}
+#weather-app{
+  background-size: cover;
+  background-position: right top;
+  box-shadow: 5px 5px 5px var(--silver);
+  background-image: url('/assets/images/weather.jpeg')
+}
+
 #project-4{
   background-size: cover;
 background-position: center;
@@ -332,7 +347,7 @@ background-position: center;
   flex-direction: column;
   font-size: 20px;
   min-width: 30%;
-  min-height: 200px;
+  min-height: 150px;
   padding: 16px;
   background-color: white;
   color: #868e96;
@@ -341,8 +356,16 @@ background-position: center;
   justify-content: center;
   text-align: center;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
+.card-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
 .card-3 i {
   font-size: 50px;
   padding-top: 16px;
@@ -510,9 +533,14 @@ footer {
   .project-1 h4 {
     font-size: 14px;
   }
+.card-row{
+  flex-direction: column;
 
+}
   .card-3 {
     font-size: 14px;
+    max-height: 150px;
+    
   }
 
   .card-3 i {
