@@ -292,7 +292,7 @@ a:hover {
 #first-project {
   background-size: cover;
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('./assets/images/office.jpeg');
+  background-image: url('/assets/images/office.jpeg');
 
 
 }
@@ -301,7 +301,7 @@ a:hover {
   background-size: cover;
   background-position: right top;
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('./assets/images/password.jpeg');
+  background-image: url('/assets/images/password.jpeg');
 
 
 }
@@ -309,7 +309,7 @@ a:hover {
   background-size: cover;
   background-position: right top;
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('./assets/images/weather.jpeg')
+  background-image: url('/assets/images/weather.jpeg')
 }
 
 #project-4{
@@ -317,7 +317,7 @@ a:hover {
 background-position: center;
  background-color: var(--background);
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('./assets/images/quiz.png');
+  background-image: url('/assets/images/quiz.png');
 
 }
 
