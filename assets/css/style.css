@@ -228,7 +228,7 @@ a:hover {
 .blackjack h4 {
   position: absolute;
   right: 0%;
-  top: 38%;
+  top: 58%;
   color: var(--background);
   background-color: rgba(52, 48, 64, .7);
   border-radius: 6px 0 0 6px;
@@ -264,7 +264,7 @@ a:hover {
 .project-1 h4 {
   position: absolute;
   right: 0%;
-  top: 38%;
+  top: 58%;
   color: var(--background);
   background-color: rgba(52, 48, 64, .7);
   border-radius: 6px 0 0 6px;
@@ -292,7 +292,7 @@ a:hover {
 #first-project {
   background-size: cover;
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('/assets/images/office.jpeg');
+  background-image: url('../images/office.jpeg');
 
 
 }
@@ -301,7 +301,7 @@ a:hover {
   background-size: cover;
   background-position: right top;
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('/assets/images/password.jpeg');
+  background-image: url('../images/password.jpeg');
 
 
 }
@@ -309,7 +309,7 @@ a:hover {
   background-size: cover;
   background-position: right top;
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('/assets/images/weather.jpeg')
+  background-image: url('../images/weather.jpeg')
 }
 
 #project-4{
@@ -317,7 +317,7 @@ a:hover {
 background-position: center;
  background-color: var(--background);
   box-shadow: 5px 5px 5px var(--silver);
-  background-image: url('/assets/images/quiz.png');
+  background-image: url('../images/quiz.png');
 
 }
 
@@ -331,12 +331,12 @@ background-position: center;
 } */
 .card-3-title {
   position: absolute;
-  right: 1%;
-  top: 70%;
+  right: 2%;
+  top: 68%;
   font-size: 18px;
   color: var(--background);
   background-color: rgba(52, 48, 64, .7);
-  padding: 8px;
+  padding: 6px;
   border-radius: 4px;
   text-decoration: none;
 }
